@@ -21,8 +21,8 @@ class ContainerAwareManager extends Manager
      *
      * @return ContainerAwareScope
      */
-    public function createData(ResourceInterface $resource, $scopeIdentifier = null,
-                               Scope $parentScopeInstance = null)
+    public function createData(ResourceInterface $resource, ?string $scopeIdentifier = null,
+                               Scope $parentScopeInstance = null): Scope
     {
         $scopeInstance = new ContainerAwareScope($this, $resource, $scopeIdentifier);
         $scopeInstance->setContainer($this->container);
