@@ -1,3 +1,12 @@
+Updated - League Fractal Symfony Bundle
+=============================
+
+The current bundle does not support PHP 8.0 rules and when used, throws exception e,g `createData` in `ContainerAwareManager` class. This is to handle the issue with an update and use it for now as we move on to replace it permanently.
+
+Below is the default Docs of the bundle. Feel free to go through.
+
+
+
 League Fractal Symfony Bundle
 =============================
 
