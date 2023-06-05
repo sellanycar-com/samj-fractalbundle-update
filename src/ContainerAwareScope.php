@@ -16,7 +16,7 @@ class ContainerAwareScope extends Scope
      * @param  mixed  $data
      * @return array
      */
-    protected function fireTransformer($transformer, $data)
+    protected function fireTransformer($transformer, $data): array
     {
         if (is_string($transformer) && $this->container->has($transformer)) {
             $transformer = $this->container->get($transformer);
